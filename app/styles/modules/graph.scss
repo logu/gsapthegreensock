@@ -1,0 +1,73 @@
+$lowlight: #0097a7;
+$primary: #00bcd4;
+
+#chart {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+#chart #numbers {
+  margin: 0;
+  margin-top: 41px;
+  padding: 0;
+  display: inline-block;
+}
+#chart #numbers li {
+  text-align: right;
+  padding-right: 1em;
+  list-style: none;
+  height: 29px;
+  border-bottom: 1px solid $lowlight;
+  position: relative;
+  bottom: 30px;
+}
+#chart #numbers li:last-child {
+  height: 30px;
+}
+#chart #numbers li span {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#chart #bars {
+  display: inline-block;
+  width: 95%;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $lowlight;
+}
+#chart #bars li {
+  display: inline-table;
+  width: 16%;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 80%;
+  margin-left: 15px;
+  background: $primary;
+  position: absolute;
+  bottom: 0;
+}
+#chart #bars li .bar:hover {
+  background: lowlight;
+  cursor: pointer;
+}
+#chart #bars li .bar:hover:before {
+  color: white;
+  content: attr(data-percentage) '%';
+  position: relative;
+  bottom: 20px;
+}
+#chart #bars li span {
+  width: 100%;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  text-align: center;
+}

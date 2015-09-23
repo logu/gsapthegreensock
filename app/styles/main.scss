@@ -27,6 +27,7 @@ button:focus{
 
 .main-content{
   padding: 20px;
+  margin-top: 60px;
 }
 
 .browserupgrade {
@@ -65,14 +66,63 @@ button:focus{
     font-weight: lighter;
     margin-bottom: 30px;
   }
-  
-  @import './modules/menu.scss';
 
 }
 
+.toolbar {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  background-color: $primary;
+  padding: 0 16px;
 
-  @import './modules/card.scss';
-    @import './modules/thermometer.scss';
-  @import './modules/calendar.scss';
+  .actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 64px;
+    top: 0;
+    left: 0;
+
+    .icon {
+      padding: 7px;
+      margin: 2px;
+      vertical-align: middle;
+    }
+
+    .spacer {
+      flex: 1;
+    }
+
+    svg {
+      display: inline-block;
+      pointer-events: none;
+      position: relative;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+
+  }
+  .title {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 40px;
+  }
+}
+
+
   @import './modules/shadow.scss';
+  @import './modules/card.scss';
+  @import './modules/thermometer.scss';
+  @import './modules/calendar.scss';
+  @import './modules/graph.scss';
+
 
