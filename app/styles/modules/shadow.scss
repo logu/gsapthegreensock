@@ -1,0 +1,77 @@
+@mixin shadow-config() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  height: inherit;
+  z-index: -2;
+  border-radius: inherit;
+  pointer-events: none;
+  box-sizing : border-box;
+}
+
+.shadow {
+  &-1:before {
+    @include shadow-config();
+    box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+  }
+  &-1:after {
+    @include shadow-config();
+    box-shadow : 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  }
+  &-2:before {
+    @include shadow-config();
+    box-shadow : 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  }
+  &-2:after {
+    @include shadow-config();
+    box-shadow : 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  &-3:before {
+    @include shadow-config();
+    box-shadow : 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  }
+  &-3:after {
+    @include shadow-config();
+    box-shadow : 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  &-4:before {
+    @include shadow-config();
+    box-shadow : 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+  }
+  &-4:after {
+    @include shadow-config();
+    box-shadow : 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  }
+  &-5:before {
+    @include shadow-config();
+    box-shadow : 0 27px 24px 0 rgba(0, 0, 0, 0.2);
+  }
+  &-5:after {
+    @include shadow-config();
+    box-shadow : 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  }
+
+  &-btn:before {
+    @include shadow-config();
+    box-shadow : 0 2px 5px 0 rgba(0, 0, 0, 0.26); 
+  }
+  &-btn:after {
+    @include shadow-config();
+    box-shadow : 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  }
+  &-btn:active {
+    &:before {
+      @include shadow-config();
+      box-shadow : 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+      transition : box-shadow 0.28s cubic-bezier(0.4, 0, 0.2,1);
+    }
+    &:after {
+      @include shadow-config();
+      box-shadow : 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition : box-shadow 0.28s cubic-bezier(0.4, 0, 0.2,1);
+    }
+  }
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gsapthegreensock</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+      <header class="header">
+        <h1 class="text-muted">Dashboard</h1>
+        <div id="menu">
+          <ul id="menu-list">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Dashboard</a></li>
+            <li> <a href="#">Users</a></li>
+            <li> <a href="#">Reports</a></li>
+            <li> <a href="#">Acounts</a></li>
+            <li> <a href="#">Help</a></li>
+           </ul>
+           <div id="menu-line"></div>
+        </div>  
+      </header>
+      <main class="main-content">
+        <section class="thermo-widget">
+          <div class="date-wrapper">
+            <div class="">
+              <span class="main-js-day">Loading...</span>
+              <span class="main-js-date-month"></span>
+              <span class="main-js-date-day"></span>
+              <span class="main-js-date-year"></span>     
+            </div>  
+          </div>
+          <div class="widget-holder">
+            <div class="de">
+             <div class="den">
+               <div class="dene">
+                 <div class="denem">
+                   <div class="deneme">
+                     21<span>.6</span><strong>&deg;</strong>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+          </div>
+
+
+          <div class="button-wrapper">
+              <div class="layer"></div>
+              <button class="more main-button shadow-btn">
+                  <i class="fa fa-calendar"></i>    
+                  <div class="ripple"></div>
+              </button>
+          </div>
+
+          <div class="layered-content">
+              <button class="close-button shadow-btn">
+                <i class="fa fa-times"></i>
+              </button>
+              <div class="content">
+                <div class="c-datepicker">
+                  <div class="c-datepicker__header">
+                    <div class="c-datepicker__header-day">
+                      <span class="js-day">Monday</span>
+                    </div>
+                    <div class="c-datepicker__header-date">
+                      <span class="c-datepicker__header-date__month js-date-month">Jan</span>
+                      <span class="c-datepicker__header-date__day js-date-day">10</span>
+                      <span class="c-datepicker__header-date__year js-date-year">2015</span>     
+                    </div>    
+                  </div>
+                  <!--<a class="js-show-date c-datepicker__header-toggle c-datepicker__header-toggle--left c-datepicker__header-toggle--inactive" >
+                    <label>
+                      
+                      <i class="material-icons">grid_on</i>
+                    </label>
+                  </a>   -->   
+                <!--  <a class="js-show-time c-datepicker__header-toggle c-datepicker__header-toggle--right">-->
+
+                  <input class="c-datepicker__toggle c-datepicker__toggle--right c-datepicker--show-time" type="radio" name="date-toggle" value="male" >
+                  
+                  <input class="c-datepicker__toggle c-datepicker__toggle--left  c-datepicker--show-calendar" type="radio" name="date-toggle" value="male" checked>
+
+                  <!--</a>-->
+                  <div class="c-datepicker__calendar" id="js-c-datepicker"></div>
+                  <div class="c-datepicker__clock" id="js-c-datepicker">
+                    <div class="c-datepicker__clock__hours">
+                      <div class="c-datepicker__clock__num">3</div>
+                      <div class="c-datepicker__clock__num">4</div>
+                      <div class="c-datepicker__clock__num">5</div>
+                      <div class="c-datepicker__clock__num">6</div>
+                      <div class="c-datepicker__clock__num">7</div>
+                      <div class="c-datepicker__clock__num">8</div>    
+                      <div class="c-datepicker__clock__num">9</div>
+                      <div class="c-datepicker__clock__num">10</div>
+                      <div class="c-datepicker__clock__num">11</div>
+                      <div class="c-datepicker__clock__num">12</div>    
+                      <div class="c-datepicker__clock__num">1</div>
+                      <div class="c-datepicker__clock__num">2</div>
+                      <div class="c-datepicker__clock-hands">
+                        <div class="c-datepicker__hour-hand"></div>
+                      </div>
+                    </div>
+                    <div class="c-datepicker__clock__minutes">
+                      <div class="c-datepicker__clock__num">15</div>
+                      <div class="c-datepicker__clock__num">20</div>
+                      <div class="c-datepicker__clock__num">25</div>
+                      <div class="c-datepicker__clock__num">30</div>    
+                      <div class="c-datepicker__clock__num">35</div>
+                      <div class="c-datepicker__clock__num">40</div>
+                      <div class="c-datepicker__clock__num">45</div>
+                      <div class="c-datepicker__clock__num">50</div>    
+                      <div class="c-datepicker__clock__num">55</div>
+                      <div class="c-datepicker__clock__num">0</div>
+                      <div class="c-datepicker__clock__num">5</div>
+                      <div class="c-datepicker__clock__num">10</div>
+                      <div class="c-datepicker__clock-hands">
+                        <div class="c-datepicker__hour-hand"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+      </main>
+
+
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+    <script src="/bower_components/moment/moment.js"></script>
+    <script src="/bower_components/rome/dist/rome.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
